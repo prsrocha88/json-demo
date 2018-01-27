@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>JSON.parse and JSON.stringify</title>
+    <script>
+        // parse: convert string to object
+         var jsonData = '{"first":"John","last":"Smith"}';
+         var jsObject = JSON.parse(jsonData);
+         document.write(jsObject.first + " " + jsObject.last + "<br />");
+
+        // stringify: convert object to string
+         var jsObject = {first:"John",last:"Smith"};
+         var jsonString = JSON.stringify(jsObject);
+         document.write(jsonString);
+    </script>
+</head>
+<body>
+</body>
+</html>

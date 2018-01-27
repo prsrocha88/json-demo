@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get JSON from API</title>
+	<script type="text/javascript">
+
+		function collectJSON() {
+
+			var xmlhttp = new XMLHttpRequest();
+			var url = "http://api.fixer.io/latest?base=";
+			url += "INR";
+			xmlhttp.open("GET", url, false);
+			xmlhttp.send();
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var result = xmlhttp.responseText;
+				document.getElementById("show").innerHTML = result;
+			}
+
+		}
+
+	</script>
+</head>
+<body>
+	<button id="btnClick" onclick="collectJSON();">Collect</button>
+	<div id="show"></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"first-name":"John",
+	"last-name":"Smith",
+	"age":30,
+	"married":true,
+	"hobbies":null,
+	"experience":["C", "JavScript", "Oracle"], // array
+	"address":{ // Object
+				"street": "St.Martin Street",
+				"state": "Texas",
+				"post": 1050
+			  }
+}
